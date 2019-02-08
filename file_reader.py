@@ -17,4 +17,4 @@ print函数也自带一个换行符所以加入了多行空格，如果想去除
 """
 with open(filename) as file_object:
     for line in file_object:
-        print(line.strip())
+        print(line.strip()) 
