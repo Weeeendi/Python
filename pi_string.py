@@ -32,3 +32,7 @@ if birthday in pi_string:
     print("Your birthday in the first million digits of pi!")
 else:
     print("Your birthday don't in the first million digits of pi!")
+
+message = "I really like dogs."
+message1 = message.replace('dog', 'cat')
+print(message1)
