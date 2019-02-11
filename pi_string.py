@@ -26,13 +26,21 @@ for line in lines:
 
 print(pi_string[:52] + "……")
 print(len(pi_string))
-
+"""
 birthday = input("Enter your birthday,in the form mmddyy:")
 if birthday in pi_string:
     print("Your birthday in the first million digits of pi!")
 else:
     print("Your birthday don't in the first million digits of pi!")
-
+"""
 message = "I really like dogs."
 message1 = message.replace('dog', 'cat')
 print(message1)
+
+filename = 'alice.txt'
+try:
+    with open(filename) as f_obj:
+    contents = f_obj.read()
+except FileNotFoundError:
+    msg = "Sorry,the file " + filename + " does not exist."
+    print(msg)
