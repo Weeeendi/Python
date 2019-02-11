@@ -5,12 +5,16 @@
     "version": "0.2.0",
     "configurations": [
         
+        
         {
             "name": "Python: Current File (Integrated Terminal)",
             "type": "python",
             "request": "launch",
             "program": "${file}",
-            "console": "integratedTerminal"
+            "console": "integratedTerminal",
+            "cwd": "${workspaceRoot}",
+            "env": {},
+            "envFile": "${workspaceRoot}/.env", 
         },
         {
             "name": "Python: Remote Attach",
